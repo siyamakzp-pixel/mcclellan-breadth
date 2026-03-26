@@ -1,6 +1,20 @@
 {
-  "days": [],
-  "ema_fast": null,
-  "ema_slow": null,
-  "summation_index": 0
+  "days": [
+    {
+      "date": "2026-03-26",
+      "advances": 1929,
+      "declines": 3213,
+      "unchanged": 142,
+      "total": 5284,
+      "net_advances": -1284,
+      "mco": 0.0,
+      "msi": 0.0,
+      "ema_fast": -1284.0,
+      "ema_slow": -1284.0,
+      "mco_direction": "flat"
+    }
+  ],
+  "ema_fast": -1284.0,
+  "ema_slow": -1284.0,
+  "summation_index": 0.0
 }
