@@ -1,0 +1,50 @@
+name: McClellan Breadth Daily
+
+on:
+  schedule:
+    - cron: '30 21 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run McClellan computation
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python compute_mcclellan.py
+
+      - name: Upload results via GitHub API
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          for FILE in mcclellan_latest.json mcclellan_history.json; do
+            echo "Uploading $FILE..."
+            CONTENT=$(base64 -w 0 "$FILE")
+            SHA=$(curl -sf -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/repos/$REPO/contents/$FILE" \
+              | python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+            if [ -n "$SHA" ] && [ "$SHA" != "" ]; then
+              PAYLOAD="{\"message\":\"📊 Update $FILE $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}"
+            else
+              PAYLOAD="{\"message\":\"📊 Update $FILE $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\"}"
+            fi
+            curl -sf -X PUT -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/repos/$REPO/contents/$FILE" \
+              -d "$PAYLOAD"
+            echo "  Done: $FILE"
+          done
+          echo "All files uploaded via API"
