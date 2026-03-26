@@ -1,6 +1,26 @@
 {
-  "updated": null,
+  "updated": "2026-03-26",
   "exchange": "NASDAQ",
-  "current": null,
-  "history": []
+  "current": {
+    "mco": 0.0,
+    "msi": 0.0,
+    "mco_direction": "flat",
+    "msi_zone": "bearish",
+    "advances": 1929,
+    "declines": 3213,
+    "unchanged": 142,
+    "total": 5284,
+    "net_advances": -1284,
+    "breadth_power": -24.3
+  },
+  "history": [
+    {
+      "date": "2026-03-26",
+      "mco": 0.0,
+      "msi": 0.0,
+      "net_advances": -1284,
+      "advances": 1929,
+      "declines": 3213
+    }
+  ]
 }
