@@ -1,0 +1,36 @@
+# .github/workflows/mcclellan_intraday.yml
+# Starts at market open and polls every 15 minutes during market hours
+# Long-running job (~6.5 hours per trading day)
+
+name: McClellan Breadth Intraday
+
+on:
+  schedule:
+    # 13:25 UTC = 9:25 AM EDT (5 min before market open)
+    # NOTE: GitHub may delay scheduled runs by 5-15 minutes during high traffic
+    - cron: '25 13 * * 1-5'  # Mon-Fri only
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 420  # 7 hours max
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run intraday poller
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python compute_mcclellan_intraday.py
