@@ -1,218 +1,29 @@
 {
-  "updated": "2026-04-30",
-  "updated_time": "2026-04-30T20:50:31.794798+00:00",
+  "updated": "2026-05-01",
+  "updated_time": "2026-05-01T14:34:19.491388+00:00",
   "exchange": "NASDAQ",
   "is_intraday": true,
   "current": {
-    "mco": 272.73,
-    "msi": 9490.31,
+    "mco": 292.08,
+    "msi": 9782.75,
     "mco_direction": "flat",
     "msi_zone": "bullish",
-    "advances": 3400,
-    "declines": 1775,
-    "unchanged": 152,
-    "total": 5327,
-    "net_advances": 1625,
-    "breadth_power": 30.5
+    "advances": 2997,
+    "declines": 2160,
+    "unchanged": 168,
+    "total": 5325,
+    "net_advances": 837,
+    "breadth_power": 15.7
   },
   "intraday_history": [
     {
-      "time": "2026-04-30T15:25:44.352345+00:00",
-      "mco": 244.38,
-      "msi": 9461.96,
-      "net_advances": 1058,
-      "advances": 3108,
-      "declines": 2050,
-      "breadth_power": 19.9
-    },
-    {
-      "time": "2026-04-30T15:41:18.257999+00:00",
-      "mco": 245.43,
-      "msi": 9463.01,
-      "net_advances": 1079,
-      "advances": 3118,
-      "declines": 2039,
-      "breadth_power": 20.3
-    },
-    {
-      "time": "2026-04-30T15:56:51.313321+00:00",
-      "mco": 249.33,
-      "msi": 9466.91,
-      "net_advances": 1157,
-      "advances": 3155,
-      "declines": 1998,
-      "breadth_power": 21.7
-    },
-    {
-      "time": "2026-04-30T16:12:29.118381+00:00",
-      "mco": 253.58,
-      "msi": 9471.16,
-      "net_advances": 1242,
-      "advances": 3202,
-      "declines": 1960,
-      "breadth_power": 23.3
-    },
-    {
-      "time": "2026-04-30T16:27:53.444255+00:00",
-      "mco": 254.38,
-      "msi": 9471.96,
-      "net_advances": 1258,
-      "advances": 3207,
-      "declines": 1949,
-      "breadth_power": 23.6
-    },
-    {
-      "time": "2026-04-30T16:43:23.204424+00:00",
-      "mco": 254.73,
-      "msi": 9472.31,
-      "net_advances": 1265,
-      "advances": 3211,
-      "declines": 1946,
-      "breadth_power": 23.8
-    },
-    {
-      "time": "2026-04-30T16:58:50.022686+00:00",
-      "mco": 254.28,
-      "msi": 9471.86,
-      "net_advances": 1256,
-      "advances": 3206,
-      "declines": 1950,
-      "breadth_power": 23.6
-    },
-    {
-      "time": "2026-04-30T17:14:13.600251+00:00",
-      "mco": 255.03,
-      "msi": 9472.61,
-      "net_advances": 1271,
-      "advances": 3218,
-      "declines": 1947,
-      "breadth_power": 23.9
-    },
-    {
-      "time": "2026-04-30T17:29:41.773136+00:00",
-      "mco": 257.23,
-      "msi": 9474.81,
-      "net_advances": 1315,
-      "advances": 3236,
-      "declines": 1921,
-      "breadth_power": 24.7
-    },
-    {
-      "time": "2026-04-30T17:45:14.429566+00:00",
-      "mco": 259.93,
-      "msi": 9477.51,
-      "net_advances": 1369,
-      "advances": 3270,
-      "declines": 1901,
-      "breadth_power": 25.7
-    },
-    {
-      "time": "2026-04-30T18:01:08.949911+00:00",
-      "mco": 260.78,
-      "msi": 9478.36,
-      "net_advances": 1386,
-      "advances": 3275,
-      "declines": 1889,
-      "breadth_power": 26.0
-    },
-    {
-      "time": "2026-04-30T18:16:42.046451+00:00",
-      "mco": 263.98,
-      "msi": 9481.56,
-      "net_advances": 1450,
-      "advances": 3309,
-      "declines": 1859,
-      "breadth_power": 27.2
-    },
-    {
-      "time": "2026-04-30T18:32:11.746336+00:00",
-      "mco": 263.98,
-      "msi": 9481.56,
-      "net_advances": 1450,
-      "advances": 3308,
-      "declines": 1858,
-      "breadth_power": 27.2
-    },
-    {
-      "time": "2026-04-30T18:47:36.407151+00:00",
-      "mco": 266.63,
-      "msi": 9484.21,
-      "net_advances": 1503,
-      "advances": 3336,
-      "declines": 1833,
-      "breadth_power": 28.2
-    },
-    {
-      "time": "2026-04-30T19:03:15.595833+00:00",
-      "mco": 265.48,
-      "msi": 9483.06,
-      "net_advances": 1480,
-      "advances": 3326,
-      "declines": 1846,
-      "breadth_power": 27.8
-    },
-    {
-      "time": "2026-04-30T19:18:44.435596+00:00",
-      "mco": 266.48,
-      "msi": 9484.06,
-      "net_advances": 1500,
-      "advances": 3336,
-      "declines": 1836,
-      "breadth_power": 28.2
-    },
-    {
-      "time": "2026-04-30T19:34:13.542958+00:00",
-      "mco": 268.13,
-      "msi": 9485.71,
-      "net_advances": 1533,
-      "advances": 3351,
-      "declines": 1818,
-      "breadth_power": 28.8
-    },
-    {
-      "time": "2026-04-30T19:49:38.768318+00:00",
-      "mco": 270.08,
-      "msi": 9487.66,
-      "net_advances": 1572,
-      "advances": 3370,
-      "declines": 1798,
-      "breadth_power": 29.5
-    },
-    {
-      "time": "2026-04-30T20:04:52.613351+00:00",
-      "mco": 273.08,
-      "msi": 9490.66,
-      "net_advances": 1632,
-      "advances": 3403,
-      "declines": 1771,
-      "breadth_power": 30.6
-    },
-    {
-      "time": "2026-04-30T20:20:04.954415+00:00",
-      "mco": 272.98,
-      "msi": 9490.56,
-      "net_advances": 1630,
-      "advances": 3402,
-      "declines": 1772,
-      "breadth_power": 30.6
-    },
-    {
-      "time": "2026-04-30T20:35:17.831019+00:00",
-      "mco": 273.13,
-      "msi": 9490.71,
-      "net_advances": 1633,
-      "advances": 3404,
-      "declines": 1771,
-      "breadth_power": 30.7
-    },
-    {
-      "time": "2026-04-30T20:50:31.794763+00:00",
-      "mco": 272.73,
-      "msi": 9490.31,
-      "net_advances": 1625,
-      "advances": 3400,
-      "declines": 1775,
-      "breadth_power": 30.5
+      "time": "2026-05-01T14:34:19.491355+00:00",
+      "mco": 292.08,
+      "msi": 9782.75,
+      "net_advances": 837,
+      "advances": 2997,
+      "declines": 2160,
+      "breadth_power": 15.7
     }
   ]
 }
