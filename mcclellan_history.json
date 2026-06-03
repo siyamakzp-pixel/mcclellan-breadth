@@ -649,9 +649,22 @@
       "ema_fast": 278.2377,
       "ema_slow": 143.1179,
       "mco_direction": "falling"
+    },
+    {
+      "date": "2026-06-03",
+      "advances": 1918,
+      "declines": 3302,
+      "unchanged": 135,
+      "total": 5355,
+      "net_advances": -1384,
+      "mco": 45.25,
+      "msi": 13100.35,
+      "ema_fast": 112.0139,
+      "ema_slow": 66.762,
+      "mco_direction": "falling"
     }
   ],
-  "ema_fast": 278.23767722120994,
-  "ema_slow": 143.1178934403974,
-  "summation_index": 13055.100880376647
+  "ema_fast": 112.01390949908895,
+  "ema_slow": 66.76199876837752,
+  "summation_index": 13100.352791107358
 }
