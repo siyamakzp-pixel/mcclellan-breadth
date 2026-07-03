@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-03",
-  "updated_time": "2026-07-03T16:29:29.578960+00:00",
+  "updated_time": "2026-07-03T16:44:34.026532+00:00",
   "exchange": "NASDAQ",
   "is_intraday": true,
   "current": {
@@ -54,6 +54,15 @@
     },
     {
       "time": "2026-07-03T16:29:29.578939+00:00",
+      "mco": 50.3,
+      "msi": 14054.51,
+      "net_advances": -83,
+      "advances": 2592,
+      "declines": 2675,
+      "breadth_power": -1.5
+    },
+    {
+      "time": "2026-07-03T16:44:34.026512+00:00",
       "mco": 50.3,
       "msi": 14054.51,
       "net_advances": -83,
