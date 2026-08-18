@@ -1,19 +1,6 @@
 {
   "days": [
     {
-      "date": "2026-03-31",
-      "advances": 2039,
-      "declines": 3103,
-      "unchanged": 149,
-      "total": 5291,
-      "net_advances": -1064,
-      "mco": -1.1,
-      "msi": -72.22,
-      "ema_fast": -1293.311,
-      "ema_slow": -1292.2114,
-      "mco_direction": "rising"
-    },
-    {
       "date": "2026-04-01",
       "advances": 3462,
       "declines": 1707,
@@ -1299,9 +1286,22 @@
       "ema_fast": 99.5722,
       "ema_slow": 47.8629,
       "mco_direction": "falling"
+    },
+    {
+      "date": "2026-08-18",
+      "advances": 2228,
+      "declines": 3070,
+      "unchanged": 165,
+      "total": 5463,
+      "net_advances": -842,
+      "mco": 2.05,
+      "msi": 12855.29,
+      "ema_fast": 5.415,
+      "ema_slow": 3.3698,
+      "mco_direction": "falling"
     }
   ],
-  "ema_fast": 99.57218893124018,
-  "ema_slow": 47.862942392764374,
-  "summation_index": 12853.246205081346
+  "ema_fast": 5.414970038116152,
+  "ema_slow": 3.369795273126151,
+  "summation_index": 12855.291379846336
 }
