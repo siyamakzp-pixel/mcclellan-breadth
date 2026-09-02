@@ -1,19 +1,19 @@
 {
   "updated": "2026-09-02",
-  "updated_time": "2026-09-02T18:57:24.515388+00:00",
+  "updated_time": "2026-09-02T19:12:27.105194+00:00",
   "exchange": "NASDAQ",
   "is_intraday": true,
   "current": {
-    "mco": -31.77,
-    "msi": 12742.22,
+    "mco": -30.27,
+    "msi": 12743.72,
     "mco_direction": "flat",
     "msi_zone": "weakening",
-    "advances": 3055,
-    "declines": 2246,
-    "unchanged": 163,
+    "advances": 3071,
+    "declines": 2232,
+    "unchanged": 161,
     "total": 5464,
-    "net_advances": 809,
-    "breadth_power": 14.8
+    "net_advances": 839,
+    "breadth_power": 15.4
   },
   "intraday_history": [
     {
@@ -87,6 +87,15 @@
       "advances": 3055,
       "declines": 2246,
       "breadth_power": 14.8
+    },
+    {
+      "time": "2026-09-02T19:12:27.105163+00:00",
+      "mco": -30.27,
+      "msi": 12743.72,
+      "net_advances": 839,
+      "advances": 3071,
+      "declines": 2232,
+      "breadth_power": 15.4
     }
   ]
 }
